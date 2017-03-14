@@ -24,16 +24,23 @@ public class TabsActivity extends AppCompatActivity {
 //        setSupportActionBar(toolbar);
         String name = getIntent().getStringExtra("PATIENT_NAME");
         String phn = getIntent().getStringExtra("MOBILE_NO");
+        String age = getIntent().getStringExtra("AGE");
 
+        int id=getIntent().getIntExtra("PATIENT_ID",-1);
         TabLayout tabLayout = (TabLayout) findViewById(R.id.tab_layout);
 /*        tabLayout.addTab(tabLayout.newTab().setText(R.string.tab1_title));
         tabLayout.addTab(tabLayout.newTab().setText(R.string.tab2_title));
         tabLayout.addTab(tabLayout.newTab().setText(R.string.tab3_title));*/
         TextView tv_name = (TextView) findViewById(R.id.name);
         TextView tv_phone = (TextView) findViewById(R.id.mobile_no);
+        TextView tv_age = (TextView) findViewById(R.id.age);
+        TextView tv_id=(TextView) findViewById(R.id.id);
 
         tv_name.setText(name);
         tv_phone.setText(phn);
+        tv_id.setText(Integer.toString(id));
+        tv_age.setText(age);
+
 
         tabLayout.addTab(tabLayout.newTab().setText(R.string.tab1_title).setIcon(R.drawable.ic_personal_information));
         tabLayout.addTab(tabLayout.newTab().setText(R.string.tab2_title).setIcon(R.drawable.ic_add_patient_record));

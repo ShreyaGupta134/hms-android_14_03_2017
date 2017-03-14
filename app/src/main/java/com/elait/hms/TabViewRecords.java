@@ -24,9 +24,16 @@ public class TabViewRecords extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
         View view = inflater.inflate(R.layout.tab_view_records, container, false);
-        String name = getActivity().getIntent().getStringExtra("PATIENT_NAME");
-        String phn = getActivity().getIntent().getStringExtra("MOBILE_NO");
-        for (String[] p_dg : HistoryCollection) {
+        String diagnosis = getActivity().getIntent().getStringExtra("DIAGNOSIS");
+        String prescription = getActivity().getIntent().getStringExtra("PRESCRIPTION");
+        String notes = getActivity().getIntent().getStringExtra("NOTES");
+        String reporting = getActivity().getIntent().getStringExtra("REPORTING");
+
+
+        TextView details = (TextView) view.findViewById(R.id.patient_data);
+        details.setText("Diagnosis: "+ diagnosis +"\n Prescription: "+ prescription +"\n Notes: "+ notes );
+
+        /*for (String[] p_dg : HistoryCollection) {
 
             if (p_dg[0].equals(name) && p_dg[1].equals(phn)) {
                 TextView textView = (TextView) view.findViewById(R.id.patient_data);
@@ -34,7 +41,7 @@ public class TabViewRecords extends Fragment {
                 TextView textView_date = (TextView) view.findViewById(R.id.date);
                 textView_date.setText(p_dg[2]);
             }
-        }
+        }*/
 
 
         return view;

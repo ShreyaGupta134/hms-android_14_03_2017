@@ -9,24 +9,24 @@ public class Contact {
     String age, contact_no;
 
 
-    String fname, gender, date,lname;
+    String fname, gender, date,lname,address,emrg_no;
 
     public String getDate() {
         return date;
+    }
+
+    public String getGender() {
+        return gender;
+    }
+
+    public void setGender(String gender) {
+        this.gender = gender;
     }
 
     public void setDate(String date) {
         this.date = date;
     }
 
-    public void setId(String id) {
-
-        this.id = id;
-    }
-
-    public String getId() {
-        return this.id;
-    }
 
     public void setage(String age) {
         this.age = age;

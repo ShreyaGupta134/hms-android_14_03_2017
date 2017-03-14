@@ -23,7 +23,7 @@ public class PagerAdapter extends FragmentStatePagerAdapter {
                 TabAddRecord tab2 = new TabAddRecord();
                 return tab2;
             case 2:
-                TabViewRecords tab3 = new TabViewRecords();
+                TabViewRecordsHistory tab3 = new TabViewRecordsHistory();
                 return tab3;
             default:
                 return null;

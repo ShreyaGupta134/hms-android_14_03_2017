@@ -9,10 +9,18 @@ import java.util.Locale;
  */
 
 public class Patient_Records {
-    String Notes ,prescription, diagnosis, next_visit;
+    String Notes ,prescription, diagnosis, next_visit,id;
 
     public String getNext_visit() {
         return next_visit;
+    }
+
+    public String getId() {
+        return id;
+    }
+
+    public void setId(String id) {
+        this.id = id;
     }
 
     public void setNext_visit(String next_visit) {
@@ -30,7 +38,7 @@ public class Patient_Records {
     }
 
     public String getDate(){
-        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd HH:mm:ss", Locale.getDefault());
+        SimpleDateFormat simpleDateFormat=new SimpleDateFormat("yyyy-MM-dd", Locale.getDefault());
         Date date=new Date();
         return simpleDateFormat.format(date);
 
