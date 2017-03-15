@@ -30,12 +30,23 @@
         style="@style/AppTheme"
         android:layout_alignParentEnd="true"
         android:onClick="onClick" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="horizontal">
+
+
     <TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
         android:id="@+id/table_layout_notification"
         android:layout_width="fill_parent"
         android:layout_height="fill_parent"
         android:layout_marginTop="30dp">
-        <TableRow
+        <!--TableRow
             android:id="@+id/table_row_notification_values"
             android:layout_width="fill_parent"
             android:layout_height="fill_parent">
@@ -71,9 +82,9 @@
                 android:textAppearance="@style/TextAppearance.AppCompat.Caption"
                 android:textColor="@android:color/black"/>
 
-        </TableRow>
+        /-->
         <ListView
-            android:id="@+id/list_item"
+            android:id="@+id/search_list_item"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:scrollbars="none"/>
@@ -105,4 +116,6 @@
 
         </TableRow-->
     </TableLayout>
+        </LinearLayout>
+    </ScrollView>
 </RelativeLayout>

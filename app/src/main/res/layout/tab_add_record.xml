@@ -23,15 +23,40 @@
         style="@style/AppTheme"
         android:layout_alignParentEnd="true" />
 
+
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="wrap_content">
-
+        android:layout_height="match_parent">
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:orientation="vertical">
 
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" >
+
+            <EditText
+                android:hint="Retype your ID"
+                android:layout_width="fill_parent"
+                android:layout_height="40dp"
+                android:backgroundTint="@color/colorAccent"
+                android:background="@drawable/back"
+                android:id="@+id/patient_id"
+                android:layout_below="@+id/update_button"
+                android:layout_marginTop="15dp"
+                />
+
+            </android.support.design.widget.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" >
             <EditText
                 android:hint="Diagnosis"
                 android:layout_width="fill_parent"
@@ -42,6 +67,16 @@
                 android:layout_below="@+id/update_button"
                 android:layout_marginTop="15dp"
                 />
+            </android.support.design.widget.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" >
 
             <EditText
                 android:hint="Prescription"
@@ -54,6 +89,16 @@
                 android:layout_alignStart="@+id/diagnosis"
                 android:layout_marginTop="15dp" />
 
+            </android.support.design.widget.TextInputLayout>
+
+            <Space
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                />
+
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" >
             <EditText
                 android:hint="Notes"
                 android:layout_width="fill_parent"
@@ -65,17 +110,17 @@
                 android:layout_alignStart="@+id/prescription"
                 android:layout_marginTop="20dp" />
 
+            </android.support.design.widget.TextInputLayout>
+
+
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="30dp"
+                android:layout_height="40dp"
                 />
 
-            <TextView
-                android:text="Reporting Date"
-                android:layout_width="match_parent"
-                android:layout_height="30dp"
-                android:textSize="20dp"
-                android:id="@+id/textView" />
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" >
 
             <EditText
                 android:hint="DD/MM/YYYY"
@@ -86,6 +131,9 @@
                 android:id="@+id/next_visit"
                 android:layout_below="@+id/update_button"
                 android:layout_marginTop="15dp"/>
+
+            </android.support.design.widget.TextInputLayout>
+
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="20dp"

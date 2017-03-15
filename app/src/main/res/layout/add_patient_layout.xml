@@ -13,31 +13,14 @@
             android:layout_height="wrap_content"
             android:orientation="vertical"
             >
-            <TextView
-                android:text="Patient ID"
-                android:layout_width="399dp"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:id="@+id/textView4" />
-
-            <EditText
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:inputType="textPersonName"
-                android:hint="Enter ID"
-                android:id="@+id/p_id" />
 
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />
 
-            <TextView
-                android:text="Patient First Name"
-                android:layout_width="match_parent"
+            <android.support.design.widget.TextInputLayout
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:id="@+id/Contact_last_name" />
-
+                android:layout_width="match_parent" >
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -45,31 +28,30 @@
                 android:hint="Enter First Name"
                 android:id="@+id/p_name" />
 
+            </android.support.design.widget.TextInputLayout>
+
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />
-            <TextView
-                android:text="Patient Last Name"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:id="@+id/Contact_name_last" />
 
+            <android.support.design.widget.TextInputLayout
+                android:layout_height="wrap_content"
+                android:layout_width="match_parent" >
             <EditText
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:inputType="textPersonName"
                 android:hint="Enter Last Name"
                 android:id="@+id/p_name_last" />
+            </android.support.design.widget.TextInputLayout>
+
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />
-            <TextView
-                android:text="Patient Age"
-                android:layout_width="match_parent"
+
+            <android.support.design.widget.TextInputLayout
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:id="@+id/Contact_age" />
+                android:layout_width="match_parent" >
 
             <EditText
                 android:layout_width="match_parent"
@@ -77,16 +59,16 @@
                 android:inputType="textPersonName"
                 android:id="@+id/p_age"
                 android:hint="Enter Age" />
+
+            </android.support.design.widget.TextInputLayout>
+
             <Space
                 android:layout_width="match_parent"
                 android:layout_height="20dp" />
 
-            <TextView
-                android:text="Patient Gender"
-                android:layout_width="match_parent"
+            <android.support.design.widget.TextInputLayout
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:id="@+id/textView7" />
+                android:layout_width="match_parent" >
 
             <RadioGroup
                 android:layout_width="match_parent"
@@ -111,16 +93,16 @@
                     android:layout_weight="1" />
             </RadioGroup>
 
+            </android.support.design.widget.TextInputLayout>
+
+
             <Space
                 android:layout_width="match_parent"
-                android:layout_height="20dp" />
+                android:layout_height="10dp" />
 
-            <TextView
-                android:text="TextView"
-                android:layout_width="match_parent"
+            <android.support.design.widget.TextInputLayout
                 android:layout_height="wrap_content"
-                android:textSize="20dp"
-                android:id="@+id/Contact_phone" />
+                android:layout_width="match_parent" >
 
             <EditText
                 android:layout_width="match_parent"
@@ -128,13 +110,15 @@
                 android:inputType="phone"
                 android:ems="10"
                 android:id="@+id/p_phone"
+                android:maxLength="10"
                 android:hint="Enter Phone number" />
 
-            <TextView
-                android:text="Date"
-                android:layout_width="match_parent"
+            </android.support.design.widget.TextInputLayout>
+
+
+            <android.support.design.widget.TextInputLayout
                 android:layout_height="wrap_content"
-                android:id="@+id/textView6" />
+                android:layout_width="match_parent" >
 
             <EditText
                 android:layout_width="match_parent"
@@ -144,6 +128,9 @@
                 android:id="@+id/p_date"
                 android:layout_weight="0.75"
                 android:hint="Enter today's Date" />
+
+            </android.support.design.widget.TextInputLayout>
+
 
             <LinearLayout
                 android:layout_width="match_parent"

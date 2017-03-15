@@ -24,6 +24,7 @@
         style="@style/AppTheme"
         android:layout_alignParentEnd="true" />
 
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -48,17 +49,6 @@
         android:layout_toRightOf="@+id/gender"
         android:layout_marginStart="16dp" />
 
-    <EditText
-        android:hint="Smoking History"
-        android:layout_width="wrap_content"
-        android:layout_height="75dp"
-        android:layout_marginTop="10dp"
-        android:backgroundTint="@color/colorAccent"
-        android:background="@drawable/back"
-        android:id="@+id/sh"
-        android:layout_below="@+id/dh"
-        android:layout_alignStart="@+id/dh"
-        android:layout_alignEnd="@+id/dh" />
 
     <EditText
         android:hint="Hyper Tension History"
@@ -68,10 +58,12 @@
         android:id="@+id/hth"
         android:backgroundTint="@color/colorAccent"
         android:background="@drawable/back"
+        android:onClick="OnClick"
         android:layout_alignTop="@+id/address"
         android:layout_alignStart="@+id/gender"
         android:layout_toStartOf="@+id/address"
         android:layout_alignEnd="@+id/address" />
+
 
     <EditText
         android:layout_width="wrap_content"
@@ -84,6 +76,7 @@
         android:layout_below="@+id/gender"
         android:layout_toRightOf="@+id/age"
         android:layout_alignStart="@+id/gender" />
+
 
     <EditText
         android:hint="Address"
@@ -110,4 +103,34 @@
         android:layout_marginTop="10dp"
         android:layout_alignEnd="@+id/hth" />
 
+
+    <EditText
+        android:hint="Smoking History"
+        android:layout_width="wrap_content"
+        android:layout_height="75dp"
+        android:layout_marginTop="10dp"
+        android:backgroundTint="@color/colorAccent"
+        android:background="@drawable/back"
+        android:id="@+id/sh"
+        android:layout_below="@+id/dh"
+        android:layout_alignStart="@+id/dh"
+        android:layout_alignEnd="@+id/dh" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"></LinearLayout>
+
+    <Button
+        android:id="@+id/SAVE"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textAllCaps="false"
+        android:onClick="onClick"
+        android:text="SAVE"
+        android:textStyle="bold"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="12dp"
+        android:layout_marginBottom="55dp" />
 </RelativeLayout>

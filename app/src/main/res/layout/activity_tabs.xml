@@ -17,45 +17,6 @@
         android:minHeight="?attr/actionBarSize"
         android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
         app:popupTheme="@style/ThemeOverlay.AppCompat.Light"/>
-    <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-        android:id="@+id/rl_Container"
-        android:layout_width="match_parent"
-        android:layout_below="@id/toolbar"
-        android:layout_height="40dp">
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_alignParentTop="true"
-            android:layout_alignParentStart="true"
-            android:layout_marginStart="10dp"
-            android:id="@+id/name"
-            android:hint="Patient Name"
-            android:backgroundTint="@color/colorAccent"
-            android:background="@drawable/back"
-            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-            android:textColor="@android:color/black"
-            android:text="patient name"
-            android:textSize="18dp"
-            android:layout_centerVertical="true"
-            android:layout_marginTop="10dp" />
-        <TextView
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:id="@+id/mobile_no"
-            android:hint="Mobile No."
-            android:layout_alignBaseline="@+id/name"
-            android:layout_alignBottom="@+id/name"
-            android:backgroundTint="@color/colorAccent"
-            android:background="@drawable/back"
-            android:layout_toEndOf="@+id/name"
-            android:layout_marginStart="64dp"
-            android:layout_gravity="center_vertical"
-            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
-            android:textColor="@android:color/black"
-            android:text="mobile no."
-            android:textSize="18dp"
-            android:layout_centerVertical="true" />
-        </RelativeLayout>
 
     <android.support.design.widget.TabLayout
         android:id="@+id/tab_layout"
@@ -78,6 +39,79 @@
         android:layout_width="match_parent"
         android:layout_height="fill_parent"
         android:layout_below="@id/tab_layout"/>
+
+    <LinearLayout
+        android:id="@+id/rl_Container"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal"
+        android:layout_below="@+id/toolbar"
+        android:layout_alignParentStart="true">
+
+
+        <TextView
+            android:text="ID"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/id"
+            android:layout_alignParentTop="true"
+            android:textSize="18dp"
+            android:background="@drawable/back"
+            android:layout_centerVertical="true"
+            android:textColor="@android:color/black"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:layout_marginEnd="11dp"
+            android:layout_marginLeft="12dp"
+            android:layout_alignParentEnd="true"
+            android:layout_weight="1" />
+
+        <TextView
+            android:text="Age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/age"
+            android:hint="Age"
+            android:backgroundTint="@color/colorAccent"
+            android:background="@drawable/back"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@android:color/black"
+            android:textSize="18dp"
+            android:layout_toEndOf="@+id/name"
+            android:layout_centerVertical="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/mobile_no"
+            android:hint="Mobile No."
+            android:backgroundTint="@color/colorAccent"
+            android:background="@drawable/back"
+            android:layout_gravity="center_vertical"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@android:color/black"
+            android:text="mobile no."
+            android:textSize="18dp"
+            android:layout_alignBottom="@+id/name"
+            android:layout_toEndOf="@+id/name"
+            android:layout_marginStart="27dp"
+            android:layout_alignTop="@+id/name" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/name"
+            android:hint="Patient Name"
+            android:backgroundTint="@color/colorAccent"
+            android:background="@drawable/back"
+            android:textAppearance="@style/TextAppearance.AppCompat.Caption"
+            android:textColor="@android:color/black"
+            android:text="patient name"
+            android:textSize="18dp"
+            android:layout_centerVertical="true"
+            android:layout_toEndOf="@+id/age"
+            android:layout_marginStart="31dp" />
+    </LinearLayout>
 
 
 </RelativeLayout>
