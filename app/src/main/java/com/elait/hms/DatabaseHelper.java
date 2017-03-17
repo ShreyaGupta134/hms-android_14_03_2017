@@ -48,8 +48,8 @@ public class DatabaseHelper extends SQLiteOpenHelper {
     public static final String HISTORY_CREATE = "create table patient_history (id integer primary key not null, patient_id integer , "
             + "prescription text not null , diagnosis text not null , note text not null , next_visit text not null , date Date default Current_timestamp);";
 
-    public static final String DEMOGRAPHY_CREATE="create table demography(demography_id integer primary key AUTOINCREMENT not null , diabities text" +
-            " , smoking text , Blood_pressur text , address text not null , emergency_contactno , FOREIGN KEY(demography_id) REFERENCES Patient_details(id) );";
+    public static final String DEMOGRAPHY_CREATE="create table demography(demography_id integer primary key AUTOINCREMENT not null , diabties text , " +
+            "smoking text , Blood_pressur text , address text not null , emergency_contactno , FOREIGN KEY(demography_id) REFERENCES contacts(id) );";
 
     public DatabaseHelper(Context context) {
         super(context, DATABASE_NAME, null, DATABASE_VERSION);
