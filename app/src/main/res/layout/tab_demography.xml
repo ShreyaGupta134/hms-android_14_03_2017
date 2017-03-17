@@ -58,7 +58,6 @@
         android:id="@+id/hth"
         android:backgroundTint="@color/colorAccent"
         android:background="@drawable/back"
-        android:onClick="OnClick"
         android:layout_alignTop="@+id/address"
         android:layout_alignStart="@+id/gender"
         android:layout_toStartOf="@+id/address"
